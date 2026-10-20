@@ -1,27 +1,27 @@
 # Graph Report - theme_export__zy7ii3-xp-myshopify-com-horizon__20OCT2026-1240pm  (2026-10-20)
 
 ## Corpus Check
-- 182 files · ~310,303 words
+- 196 files · ~338,884 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 291 file(s) not represented in the graph (top: .liquid 285, .css 4, (none) 2)
+- Unclassified: 296 file(s) not represented in the graph (top: .liquid 287, .css 5, (none) 2)
 
 ## Summary
-- 1419 nodes · 2841 edges · 104 communities (42 shown, 62 thin omitted)
+- 1477 nodes · 2891 edges · 108 communities (49 shown, 59 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 21 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fad49421`
+- Built from commit: `7bdb559a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - FacetsFormComponent
-- component.js
+- product-card.js
 - QuickOrderListComponent
 - CartItemsComponent
 - Component
-- morph
+- morph.js
 - Slideshow
 - standard-events.d.ts
 - PaginatedList
@@ -42,7 +42,7 @@
 - global.d.ts
 - OverflowList
 - DeferredMedia
-- morph.js
+- CartItemsComponent
 - qr-code-generator.js
 - GiftCardRecipientForm
 - ProductHotspotComponent
@@ -51,7 +51,7 @@
 - StickyAddToCartComponent
 - MarqueeComponent
 - validate-cabak.cjs
-- section-renderer.js
+- AnchoredPopoverComponent
 - AnnouncementBar
 - ShopifyStandardEvent
 - Graphify integration design
@@ -85,12 +85,12 @@
 - tasks.md
 - graphify-update.sh
 - graphify-watch.sh
-- product-card.js
+- paginated-list.js
 - PriceFacetComponent
 - CABAK storefront design
 - CABAK implementation handoff
 - CollectionLinks
-- .connectedCallback
+- Category page design
 - facets.js
 - FacetInputsComponent
 - SortingFilterComponent
@@ -98,22 +98,26 @@
 - FacetStatusComponent
 - CABAK storefront requirements
 - FacetRemoveComponent
-- view-event-elements.d.ts
+- Collection dropdown
 - theme-editor.js
 - plan.md
 - CabakRail
-- LocalPickup
+- requestIdleCallback
 - cabak-storefront/tasks.md
 - Transparent brand assets
-- QuickAddDialog
-- ProductInventory
+- CABAK global typography
+- .connectedCallback
 - CABAK reference-layout validation
 - ShowMoreComponent
 - reference-layout.md
-- ProductPrice
+- Centered symbol trial
 - Mobile storefront refinement
-- ProductSkuComponent
-- scheduler
+- Homepage catalog alignment and restrained typography
+- CABAK category pages
+- Category page tasks
+- Category page validation
+- collection-hover.md
+- header-color-trial.md
 
 ## God Nodes (most connected - your core abstractions)
 1. `Component` - 127 edges
@@ -142,43 +146,47 @@
 ## Import Cycles
 - None detected.
 
-## Communities (104 total, 62 thin omitted)
+## Communities (108 total, 59 thin omitted)
 
-### Community 1 - "component.js"
-Cohesion: 0.12
-Nodes (8): DeclarativeShadowElement, getAncestor(), getClosestComponent(), MissingRefError, parseData(), parseValue(), registerEventListeners(), CollectionComponent
+### Community 1 - "product-card.js"
+Cohesion: 0.16
+Nodes (8): DeclarativeShadowElement, FlyToCart, getViewParameterValue(), isDesktopBreakpoint(), ResizeNotifier, yieldToMainThread(), CollectionComponent, ProductComponent
 
 ### Community 3 - "CartItemsComponent"
-Cohesion: 0.07
-Nodes (13): CartDiscount, CartItemsComponent, ProductRecommendations, injectSectionStylesheet(), morphSection(), isLowPowerDevice(), prefersReducedMotion(), preloadImage() (+5 more)
+Cohesion: 0.11
+Nodes (13): CartDiscount, MORPH_OPTIONS, ProductRecommendations, hydrate(), hydrateSection(), buildSectionRenderingURL(), buildSectionSelector(), containsShadowRoot() (+5 more)
 
 ### Community 4 - "Component"
-Cohesion: 0.11
-Nodes (7): Component, CopyToClipboardComponent, ProductCustomProperty, RTEFormatter, SearchPageInputComponent, VideoBackgroundComponent, VolumePricingComponent
+Cohesion: 0.07
+Nodes (17): Component, getAncestor(), getClosestComponent(), MissingRefError, parseData(), parseValue(), registerEventListeners(), CopyToClipboardComponent (+9 more)
 
-### Community 5 - "morph"
-Cohesion: 0.18
-Nodes (4): morph(), recreateAppBlockScripts(), getViewParameterValue(), VariantPicker
+### Community 5 - "morph.js"
+Cohesion: 0.07
+Nodes (24): LocalPickup, attributesEqual(), collectHydrationTargets(), copyAttributes(), getNodeKey(), morph(), morphHydrationByKey(), PRESERVED_ATTRIBUTES (+16 more)
 
 ### Community 7 - "standard-events.d.ts"
 Cohesion: 0.05
 Nodes (39): CartAjaxLine, CartAjaxResponse, CartDiscountUpdatePayloadDetail, CartDiscountUpdateResult, CartDiscountUpdateResultDetail, CartErrorPayloadDetail, CartLinesUpdateEvent, CartLinesUpdatePayload (+31 more)
 
 ### Community 8 - "PaginatedList"
-Cohesion: 0.07
-Nodes (17): BlogPostsList, FlyToCart, HeaderComponent, JumboText, PaginatedListAspectRatioHelper, PaginatedList, getIntersectionRoot(), getScrollContainer() (+9 more)
+Cohesion: 0.16
+Nodes (3): BlogPostsList, PaginatedListAspectRatioHelper, PaginatedList
+
+### Community 9 - "ProductFormComponent"
+Cohesion: 0.12
+Nodes (4): AddToCartComponent, ProductFormComponent, normalizeVariantId(), resolveVariantId()
 
 ### Community 10 - "popover-polyfill.js"
 Cohesion: 0.14
 Nodes (30): apply(), checkPopoverValidity(), closeAllOpenPopovers(), closeAllOpenPopoversInList(), focusDelegate(), getPopoverVisibilityState(), getRootNode(), getStackPosition() (+22 more)
 
 ### Community 12 - "HeaderMenu"
-Cohesion: 0.13
-Nodes (5): MegaMenuHoverEvent, findMenuItem(), findSubmenu(), HeaderMenu, onDocumentLoaded()
+Cohesion: 0.15
+Nodes (3): findMenuItem(), findSubmenu(), HeaderMenu
 
 ### Community 13 - "utilities.js"
-Cohesion: 0.15
-Nodes (13): calculateHeaderGroupHeight(), isClickedOutside(), isPointWithinElement(), isTouchDevice(), mediaQueryLarge, reducedMotion, scrollLockOwners, setHeaderMenuStyle() (+5 more)
+Cohesion: 0.13
+Nodes (17): calculateHeaderGroupHeight(), getIOSVersion(), isClickedOutside(), isMobileBreakpoint(), isPointWithinElement(), isTouchDevice(), mediaQueryLarge, oncePerEditorSession() (+9 more)
 
 ### Community 14 - "standard-actions.d.ts"
 Cohesion: 0.07
@@ -193,44 +201,44 @@ Cohesion: 0.12
 Nodes (4): DrawerLocalizationComponent, DropdownLocalizationComponent, LocalizationFormComponent, normalizeString()
 
 ### Community 19 - "QuantitySelectorComponent"
-Cohesion: 0.17
-Nodes (3): CartQuantitySelectorComponent, QuantitySelectorComponent, parseIntOrDefault()
+Cohesion: 0.14
+Nodes (4): CartQuantitySelectorComponent, QuantitySelectorComponent, QuantitySelectorUpdateEvent, parseIntOrDefault()
 
 ### Community 22 - "slideshow.js"
-Cohesion: 0.27
-Nodes (6): SlideshowSelectEvent, center(), clamp(), closest(), preventDefault(), viewTransition
+Cohesion: 0.24
+Nodes (6): SlideshowSelectEvent, center(), clamp(), closest(), preventDefault(), scheduler
 
 ### Community 23 - "global.d.ts"
 Cohesion: 0.09
 Nodes (15): CartDiscountUpdateResultDetail, CartErrorPayloadDetail, CartLinesUpdateResultDetail, LoadCallback, ModelViewer, NavigationActivation, NavigationHistoryEntry, Navigator (+7 more)
 
+### Community 24 - "OverflowList"
+Cohesion: 0.10
+Nodes (3): JumboText, OverflowList, OverflowMinimumEvent
+
 ### Community 25 - "DeferredMedia"
 Cohesion: 0.17
 Nodes (3): MediaStartedPlayingEvent, DeferredMedia, ProductModel
 
-### Community 26 - "morph.js"
-Cohesion: 0.22
-Nodes (18): attributesEqual(), collectHydrationTargets(), copyAttributes(), getNodeKey(), morphHydrationByKey(), PRESERVED_ATTRIBUTES, PRESERVED_ATTRIBUTES_SET, same() (+10 more)
+### Community 26 - "CartItemsComponent"
+Cohesion: 0.07
+Nodes (10): CartItemsComponent, ResultsList, isLowPowerDevice(), prefersReducedMotion(), preloadImage(), shouldDisableCrossDocumentViewTransitions(), startViewTransition(), supportsViewTransitions() (+2 more)
 
 ### Community 27 - "qr-code-generator.js"
-Cohesion: 0.12
-Nodes (9): getTypeNumber(), getUTF8Length(), onMakeImage(), QRCode(), QRCodeModel(), QRErrorCorrectLevel, QRMaskPattern, QRMode (+1 more)
+Cohesion: 0.13
+Nodes (8): getTypeNumber(), getUTF8Length(), onMakeImage(), QRCode(), QRCodeModel(), QRErrorCorrectLevel, QRMaskPattern, QRMode
 
 ### Community 30 - "component-cart-items.js"
-Cohesion: 0.29
-Nodes (6): CartNote, CartSectionRestoredEvent, cartPerformance, fetchConfig(), normalizeVariantId(), resolveVariantId()
+Cohesion: 0.40
+Nodes (4): CartNote, CartSectionRestoredEvent, cartPerformance, fetchConfig()
 
 ### Community 31 - "onAnimationEnd"
-Cohesion: 0.06
-Nodes (17): DialogComponent, getFocusableElements(), removeTrapFocus(), trapFocus(), trapFocusHandlers, HeaderActions, HeaderDrawer, reset() (+9 more)
+Cohesion: 0.05
+Nodes (18): DialogComponent, getFocusableElements(), removeTrapFocus(), trapFocus(), trapFocusHandlers, HeaderActions, HeaderDrawer, reset() (+10 more)
 
 ### Community 34 - "validate-cabak.cjs"
-Cohesion: 0.15
-Nodes (7): { chromium }, fs, path, assert, { chromium }, fs, path
-
-### Community 35 - "section-renderer.js"
-Cohesion: 0.07
-Nodes (13): AnchoredPopoverComponent, getTriggerByAriaControls(), FloatingPanelComponent, ResultsList, hydrate(), hydrateSection(), buildSectionRenderingURL(), buildSectionSelector() (+5 more)
+Cohesion: 0.09
+Nodes (14): { chromium }, fs, path, assert, { chromium }, fs, path, assert (+6 more)
 
 ### Community 37 - "ShopifyStandardEvent"
 Cohesion: 0.15
@@ -253,7 +261,7 @@ Cohesion: 0.29
 Nodes (6): Approved horizontal logo update, Current correction: retain both brand assets, Design and tasks, Header brand refinement, Requirements, Validation
 
 ### Community 46 - "dialog.js"
-Cohesion: 0.19
+Cohesion: 0.26
 Nodes (4): DialogCloseEvent, DialogOpenEvent, ANIMATION_OPTIONS, debounce()
 
 ### Community 51 - "view-transitions.js"
@@ -265,16 +273,16 @@ Cohesion: 0.18
 Nodes (6): calculatePaddingStart(), getScrollAxis(), ScrollHint, scrollIntoView(), isRTL(), throttle()
 
 ### Community 53 - "component.js"
-Cohesion: 0.25
-Nodes (3): QuantitySelectorUpdateEvent, ThemeEvents, ZoomMediaSelectedEvent
+Cohesion: 0.14
+Nodes (5): MegaMenuHoverEvent, ThemeEvents, ZoomMediaSelectedEvent, ProductPrice, ProductSkuComponent
 
 ### Community 54 - "StandardStorefrontEventMap"
 Cohesion: 0.50
 Nodes (4): DocumentEventMap, ElementEventMap, StandardStorefrontEventMap, WindowEventMap
 
-### Community 75 - "product-card.js"
-Cohesion: 0.17
-Nodes (5): MORPH_OPTIONS, ProductCardLink, SwatchesVariantPickerComponent, ResizeNotifier, ProductComponent
+### Community 75 - "paginated-list.js"
+Cohesion: 0.16
+Nodes (11): HeaderComponent, getIntersectionRoot(), getScrollContainer(), getScrollEventTarget(), getScrollTop(), originalPushState, restoreSavedScrollTop(), saveScrollPosition() (+3 more)
 
 ### Community 77 - "CABAK storefront design"
 Cohesion: 0.20
@@ -284,6 +292,10 @@ Nodes (9): ADR-001: Extend Horizon, ADR-002: Provider-managed payments, CABAK st
 Cohesion: 0.33
 Nodes (5): CABAK implementation handoff, Implemented, Merchant setup still required, Reference correction, Verification
 
+### Community 80 - "Category page design"
+Cohesion: 0.33
+Nodes (5): ADR: Native collections over static pages, Category page design, Existing contract, Presentation and interaction, Structure
+
 ### Community 81 - "facets.js"
 Cohesion: 0.50
 Nodes (6): convertMoneyToMinorUnits(), CURRENCY_DECIMALS, formatCents(), formatMoney(), getCurrencyDivisor(), getCurrencyPrecision()
@@ -292,43 +304,63 @@ Nodes (6): convertMoneyToMinorUnits(), CURRENCY_DECIMALS, formatCents(), formatM
 Cohesion: 0.40
 Nodes (4): Acceptance criteria, Brief, CABAK storefront requirements, Required owner inputs
 
-### Community 88 - "view-event-elements.d.ts"
-Cohesion: 0.33
-Nodes (3): CollectionComponent, ProductComponent, Refs
+### Community 88 - "Collection dropdown"
+Cohesion: 0.40
+Nodes (4): Collection dropdown, Design, Requirements, Tasks and acceptance checks
 
 ### Community 89 - "theme-editor.js"
 Cohesion: 0.18
 Nodes (5): carouselState, isIOS, layeredSlideshowState, matches(), slideshowState
 
+### Community 92 - "requestIdleCallback"
+Cohesion: 0.24
+Nodes (3): FloatingPanelComponent, requestIdleCallback, viewTransition
+
 ### Community 94 - "Transparent brand assets"
 Cohesion: 0.40
 Nodes (4): Design and tasks, Generation prompts, Requirements, Transparent brand assets
+
+### Community 95 - "CABAK global typography"
+Cohesion: 0.20
+Nodes (9): Approved Cormorant trial, Approved requirements, CABAK global typography, Cormorant validation, Design and decision, Restrained sans-serif trial, Tasks, Trial rejected (+1 more)
 
 ### Community 97 - "CABAK reference-layout validation"
 Cohesion: 0.40
 Nodes (4): CABAK reference-layout validation, Deliberate differences and remaining content, Homepage composition, Reproduce
 
+### Community 100 - "Centered symbol trial"
+Cohesion: 0.33
+Nodes (5): Centered symbol trial, Design, Requirements, Tasks, Validation
+
 ### Community 101 - "Mobile storefront refinement"
 Cohesion: 0.33
 Nodes (5): Design, Mobile storefront refinement, Requirements, Tasks and validation, Verification
 
+### Community 102 - "Homepage catalog alignment and restrained typography"
+Cohesion: 0.33
+Nodes (5): Design, Homepage catalog alignment and restrained typography, Requirements, Tasks, Validation
+
+### Community 105 - "CABAK category pages"
+Cohesion: 0.50
+Nodes (3): Acceptance criteria, CABAK category pages, Scope limits
+
 ## Knowledge Gaps
-- **62 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **59 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Component` connect `Component` to `FacetsFormComponent`, `component.js`, `QuickOrderListComponent`, `CartItemsComponent`, `morph`, `Slideshow`, `PaginatedList`, `ProductFormComponent`, `HeaderMenu`, `utilities.js`, `LayeredSlideshowComponent`, `LocalizationFormComponent`, `PredictiveSearchComponent`, `QuantitySelectorComponent`, `QuickAddComponent`, `DragZoomWrapper`, `slideshow.js`, `DeferredMedia`, `morph.js`, `qr-code-generator.js`, `GiftCardRecipientForm`, `ProductHotspotComponent`, `component-cart-items.js`, `onAnimationEnd`, `StickyAddToCartComponent`, `MarqueeComponent`, `section-renderer.js`, `AnnouncementBar`, `DisclosuresSummaryFit`, `CartDrawerComponent`, `CartIcon`, `MediaGallery`, `dialog.js`, `ComparisonSliderComponent`, `PricePerItemComponent`, `component.js`, `VolumePricingInfoComponent`, `product-card.js`, `PriceFacetComponent`, `CollectionLinks`, `facets.js`, `FacetInputsComponent`, `SortingFilterComponent`, `FacetClearComponent`, `FacetStatusComponent`, `FacetRemoveComponent`, `view-event-elements.d.ts`, `LocalPickup`, `QuickAddDialog`, `ProductInventory`, `ShowMoreComponent`, `ProductPrice`, `ProductSkuComponent`?**
-  _High betweenness centrality (0.429) - this node is a cross-community bridge._
-- **Should `component.js` be split into smaller, more focused modules?**
-  _Cohesion score 0.12121212121212122 - nodes in this community are weakly interconnected._
-- **Why does `LayeredSlideshowComponent` connect `LayeredSlideshowComponent` to `Component`, `utilities.js`?**
-  _High betweenness centrality (0.042) - this node is a cross-community bridge._
+- **Why does `Component` connect `Component` to `FacetsFormComponent`, `product-card.js`, `QuickOrderListComponent`, `CartItemsComponent`, `morph.js`, `Slideshow`, `PaginatedList`, `ProductFormComponent`, `HeaderMenu`, `utilities.js`, `LayeredSlideshowComponent`, `LocalizationFormComponent`, `PredictiveSearchComponent`, `QuantitySelectorComponent`, `QuickAddComponent`, `DragZoomWrapper`, `slideshow.js`, `OverflowList`, `DeferredMedia`, `CartItemsComponent`, `GiftCardRecipientForm`, `ProductHotspotComponent`, `component-cart-items.js`, `onAnimationEnd`, `StickyAddToCartComponent`, `MarqueeComponent`, `AnchoredPopoverComponent`, `AnnouncementBar`, `DisclosuresSummaryFit`, `CartDrawerComponent`, `CartIcon`, `MediaGallery`, `dialog.js`, `ComparisonSliderComponent`, `PricePerItemComponent`, `component.js`, `VolumePricingInfoComponent`, `paginated-list.js`, `PriceFacetComponent`, `CollectionLinks`, `facets.js`, `FacetInputsComponent`, `SortingFilterComponent`, `FacetClearComponent`, `FacetStatusComponent`, `FacetRemoveComponent`, `requestIdleCallback`, `ShowMoreComponent`?**
+  _High betweenness centrality (0.402) - this node is a cross-community bridge._
 - **Should `QuickOrderListComponent` be split into smaller, more focused modules?**
-  _Cohesion score 0.12298387096774194 - nodes in this community are weakly interconnected._
-- **Why does `ProductCard` connect `ProductCard` to `product-card.js`?**
-  _High betweenness centrality (0.037) - this node is a cross-community bridge._
+  _Cohesion score 0.12903225806451613 - nodes in this community are weakly interconnected._
+- **Why does `LayeredSlideshowComponent` connect `LayeredSlideshowComponent` to `Component`, `utilities.js`?**
+  _High betweenness centrality (0.040) - this node is a cross-community bridge._
 - **Should `CartItemsComponent` be split into smaller, more focused modules?**
-  _Cohesion score 0.06896551724137931 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.10810810810810811 - nodes in this community are weakly interconnected._
+- **Why does `ProductCard` connect `ProductCard` to `product-card.js`?**
+  _High betweenness centrality (0.035) - this node is a cross-community bridge._
 - **Should `Component` be split into smaller, more focused modules?**
-  _Cohesion score 0.11231884057971014 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06775510204081632 - nodes in this community are weakly interconnected._
+- **Should `morph.js` be split into smaller, more focused modules?**
+  _Cohesion score 0.07215686274509804 - nodes in this community are weakly interconnected._
