@@ -1,0 +1,8 @@
+docs/**
+capture/**
+graphify-out/**
+scripts/**
+tests/**
+README.md
+PARITY.md
+.codex/**

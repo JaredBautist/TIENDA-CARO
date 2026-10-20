@@ -1,0 +1,40 @@
+<nav class="cabak-category-grid" id="cabak-categorias" aria-label="Comprar por categoría">
+  {% for block in section.blocks %}
+    {% liquid
+      assign category = block.settings.collection
+      assign category_url = block.settings.link | default: category.url
+      assign category_image = block.settings.image | default: category.featured_image
+      assign category_title = block.settings.title | default: category.title
+    %}
+    <div class="cabak-category-grid__tile" {{ block.shopify_attributes }}>
+      {% if category_url != blank %}<a href="{{ category_url }}">{% endif %}
+        <div class="cabak-category-grid__media">
+          {% if category_image %}
+            {{ category_image | image_url: width: 1000 | image_tag: widths: '300, 500, 750, 1000', sizes: '(min-width: 1000px) 25vw, 50vw', loading: 'lazy' }}
+          {% else %}
+            <span class="cabak-category-grid__missing" aria-hidden="true">CABAK</span>
+          {% endif %}
+          <span class="cabak-category-grid__title">{{ category_title | escape }}</span>
+        </div>
+      {% if category_url != blank %}</a>{% endif %}
+    </div>
+  {% endfor %}
+</nav>
+{% schema %}
+{
+  "name": "CABAK · Categorías",
+  "max_blocks": 12,
+  "settings": [],
+  "blocks": [{
+    "type": "category",
+    "name": "Categoría",
+    "settings": [
+      { "type": "text", "id": "title", "label": "Nombre", "default": "Colección" },
+      { "type": "collection", "id": "collection", "label": "Colección" },
+      { "type": "url", "id": "link", "label": "Enlace alternativo" },
+      { "type": "image_picker", "id": "image", "label": "Fotografía propia" }
+    ]
+  }],
+  "presets": [{ "name": "CABAK · Categorías" }]
+}
+{% endschema %}

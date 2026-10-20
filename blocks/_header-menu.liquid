@@ -11,6 +11,11 @@
   assign effective_submenu_color = block_settings.background_color | default: settings.page_background_color
 %}
 
+{% if block.settings.cabak_navigation %}
+  {% unless variant == 'navigation_bar' %}
+    {% render 'cabak-menu', variant: variant, menu: block.settings.menu %}
+  {% endunless %}
+{% else %}
 {% case variant %}
   {% when 'mobile' %}
     <div
@@ -222,6 +227,7 @@
       ></script>
     </header-menu>
 {% endcase %}
+{% endif %}
 
 {% style %}
   .header__underlay {
@@ -820,6 +826,12 @@
   "name": "t:names.menu",
   "tag": null,
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "cabak_navigation",
+      "label": "Usar navegación CABAK",
+      "default": true
+    },
     {
       "type": "link_list",
       "id": "menu",

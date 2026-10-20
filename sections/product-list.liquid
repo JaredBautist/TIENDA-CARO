@@ -7,6 +7,7 @@
   endif
 %}
 
+{% if request.design_mode or section.settings.collection.products_count > 0 %}
 <div
   class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
 ></div>
@@ -85,6 +86,15 @@
     {%- content_for 'blocks' -%}
   </div>
 </div>
+
+{% else %}
+  <section class="cabak-story">
+    <div class="cabak-story__inner">
+      <h2>Nuestra colección está en camino</h2>
+      <p>Pronto podrás descubrir aquí las prendas de CABAK.</p>
+    </div>
+  </section>
+{% endif %}
 
 {% schema %}
 {

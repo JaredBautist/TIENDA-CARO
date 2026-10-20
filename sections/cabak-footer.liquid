@@ -1,0 +1,17 @@
+<footer class="cabak-footer">
+  <div class="cabak-footer__social">{% content_for 'block', type: 'social-links', id: 'cabak-social' %}</div>
+  <nav aria-label="Información de la tienda" class="cabak-footer__links">
+    <a href="{{ routes.search_url }}">Buscar</a>
+    {% for link in section.settings.menu.links %}<a href="{{ link.url }}">{{ link.title | escape }}</a>{% endfor %}
+    {% for policy in shop.policies %}{% if policy.body != blank %}<a href="{{ policy.url }}">{{ policy.title | escape }}</a>{% endif %}{% endfor %}
+  </nav>
+  <p>© {{ 'now' | date: '%Y' }} CABAK Activewear</p>
+</footer>
+{% schema %}
+{
+  "name": "CABAK · Pie de página",
+  "enabled_on": { "groups": ["footer"] },
+  "settings": [{ "type": "link_list", "id": "menu", "label": "Enlaces adicionales" }],
+  "presets": [{ "name": "CABAK · Pie de página" }]
+}
+{% endschema %}

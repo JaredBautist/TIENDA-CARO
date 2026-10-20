@@ -1,0 +1,35 @@
+{% doc %}
+  Reference-style CABAK navigation. Mobile uses an accessible native disclosure.
+  @param {string} [variant] - Mobile or desktop header variant.
+  @param {object} [menu] - Merchant-configured menu; additional entries follow core shopping links.
+{% enddoc %}
+{% capture links %}
+  <a href="{{ routes.root_url }}#cabak-novedades">Novedades</a>
+  <details class="cabak-menu__collections">
+    <summary>Colecciones {{ 'icon-caret.svg' | inline_asset_content }}</summary>
+    <div class="cabak-menu__submenu">
+      <a href="{{ routes.root_url }}#cabak-categorias">Todas las categorías</a>
+      {% for collection in collections limit: 12 %}
+        {% if collection.handle != 'all' and collection.products_count > 0 %}
+          <a href="{{ collection.url }}">{{ collection.title | escape }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </details>
+  <a href="{{ routes.all_products_collection_url }}">Ropa deportiva</a>
+  {% for link in menu.links %}
+    {% unless link.type == 'frontpage_link' or link.url == routes.all_products_collection_url %}
+      <a href="{{ link.url }}">{% if link.title == 'Contact' %}Contacto{% else %}{{ link.title | escape }}{% endif %}</a>
+    {% endunless %}
+  {% endfor %}
+{% endcapture %}
+{% if variant == 'mobile' %}
+  <cabak-navigation class="cabak-menu-mobile" ref="headerDrawerContainer">
+    <details class="cabak-menu-mobile__disclosure">
+      <summary aria-label="Menú de navegación">{{ 'icon-menu.svg' | inline_asset_content }}</summary>
+      <nav class="cabak-menu-mobile__panel" aria-label="Navegación móvil">{{ links }}</nav>
+    </details>
+  </cabak-navigation>
+{% else %}
+  <cabak-navigation class="cabak-menu-desktop" ref="headerMenu"><nav class="cabak-menu" aria-label="Navegación principal">{{ links }}</nav></cabak-navigation>
+{% endif %}

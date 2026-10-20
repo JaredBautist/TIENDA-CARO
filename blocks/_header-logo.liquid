@@ -57,6 +57,12 @@
     {% endif %}
     data-testid="header-logo"
   >
+    {% if settings.logo == blank %}
+      <span class="cabak-header-brand">
+        <img class="cabak-header-symbol" src="{{ 'cabak-symbol-transparent.png' | asset_url }}" width="1254" height="1254" alt="" loading="eager">
+        <img class="cabak-header-wordmark" src="{{ 'cabak-wordmark-transparent.png' | asset_url }}" width="1991" height="789" alt="CABAK Activewear — Inicio" loading="eager">
+      </span>
+    {% else %}
     {% render 'image',
       image: settings.logo,
       class: 'header-logo__image',
@@ -65,6 +71,7 @@
       text_fallback: shop.name,
       style: logo_style
     %}
+    {% endif %}
   </span>
 
   {% if use_inverse_logo %}

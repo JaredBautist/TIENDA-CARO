@@ -1,0 +1,8 @@
+# Reference photographs are local design evidence, not project assets.
+capture/reference/*.png
+
+# Local authentication and environment configuration.
+.env
+.env.*
+!.env.example
+.shopify/

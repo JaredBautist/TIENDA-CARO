@@ -1,0 +1,58 @@
+{% liquid
+  assign featured_collection = section.settings.collection
+  assign rail_id = 'cabak-track-' | append: section.id
+%}
+<section class="cabak-products" {% if section.id contains 'cabak_new' %}id="cabak-novedades"{% endif %} aria-labelledby="cabak-title-{{ section.id }}">
+  <h2 id="cabak-title-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+  <cabak-rail>
+    <div class="cabak-products__controls">
+      <button type="button" data-previous aria-label="Productos anteriores" aria-controls="{{ rail_id }}" disabled>{{ 'icon-caret.svg' | inline_asset_content }}</button>
+      <button type="button" data-next aria-label="Productos siguientes" aria-controls="{{ rail_id }}">{{ 'icon-caret.svg' | inline_asset_content }}</button>
+    </div>
+    <ul id="{{ rail_id }}" class="cabak-products__track" data-track tabindex="0" aria-label="{{ section.settings.heading | escape }}">
+      {% for product in featured_collection.products limit: section.settings.limit %}
+        <li class="cabak-tile">
+          <a href="{{ product.url }}" class="cabak-tile__link">
+            <div class="cabak-tile__media">
+              {% if product.featured_image %}
+                {{ product.featured_image | image_url: width: 900 | image_tag: widths: '240, 400, 600, 900', sizes: '(min-width: 1100px) 25vw, (min-width: 750px) 44vw, 65vw', loading: 'lazy', class: 'cabak-tile__image' }}
+              {% else %}
+                <span class="cabak-tile__missing">Imagen próximamente</span>
+              {% endif %}
+              {% unless product.available %}<span class="cabak-tile__badge">Agotado</span>{% endunless %}
+            </div>
+            <h3>{{ product.title | escape }}</h3>
+            <div class="cabak-tile__price">
+              {% if product.price_varies %}<span>Desde </span>{% endif %}
+              <span>{{ product.price | money }}</span>
+              {% if product.compare_at_price > product.price %}<s>{{ product.compare_at_price | money }}</s>{% endif %}
+            </div>
+          </a>
+        </li>
+      {% else %}
+        {% for i in (1..4) %}
+          <li class="cabak-tile cabak-tile--pending">
+            <div class="cabak-tile__media"><span class="cabak-tile__missing">CABAK<span>Imagen próximamente</span></span></div>
+            <p>Colección en preparación</p>
+          </li>
+        {% endfor %}
+      {% endfor %}
+    </ul>
+  </cabak-rail>
+  {% if featured_collection != blank %}
+    <a class="cabak-products__all" href="{{ featured_collection.url }}">Ver colección</a>
+  {% elsif request.design_mode %}
+    <p class="cabak-editor-note">Selecciona una colección para reemplazar estos espacios por productos reales.</p>
+  {% endif %}
+</section>
+{% schema %}
+{
+  "name": "CABAK · Productos",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Título", "default": "Novedades" },
+    { "type": "collection", "id": "collection", "label": "Colección" },
+    { "type": "range", "id": "limit", "label": "Productos", "min": 4, "max": 16, "step": 1, "default": 8 }
+  ],
+  "presets": [{ "name": "CABAK · Productos" }]
+}
+{% endschema %}

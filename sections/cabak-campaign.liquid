@@ -1,0 +1,57 @@
+<section class="cabak-banner" aria-label="Campañas CABAK">
+  <cabak-rail>
+    <div class="cabak-banner__track" data-track id="campaign-{{ section.id }}" tabindex="0" aria-label="Deslizar campañas">
+      {% for block in section.blocks %}
+        {% assign campaign_link = block.settings.link | default: routes.all_products_collection_url %}
+        <a class="cabak-banner__slide{% if block.settings.image == blank %} cabak-banner__slide--pending{% endif %}" href="{{ campaign_link }}" {{ block.shopify_attributes }} aria-label="{{ block.settings.heading | escape }}">
+          {% if block.settings.image != blank %}
+            <picture>
+              {% if block.settings.mobile_image != blank %}
+                <source media="(max-width: 749px)" srcset="{{ block.settings.mobile_image | image_url: width: 800 }}">
+              {% endif %}
+              {% if forloop.first %}
+                {{ block.settings.image | image_url: width: 2400 | image_tag: widths: '600, 1000, 1440, 1920, 2400', sizes: '100vw', loading: 'eager', fetchpriority: 'high', class: 'cabak-banner__image' }}
+              {% else %}
+                {{ block.settings.image | image_url: width: 2400 | image_tag: widths: '600, 1000, 1440, 1920, 2400', sizes: '100vw', loading: 'lazy', class: 'cabak-banner__image' }}
+              {% endif %}
+            </picture>
+          {% endif %}
+          {% if block.settings.image == blank or block.settings.show_text %}
+            <div class="cabak-banner__copy">
+              <span class="cabak-banner__brand">CABAK ACTIVEWEAR</span>
+              <span class="cabak-banner__heading">{{ block.settings.heading | escape }}</span>
+              <span class="cabak-banner__cta">Ver colección</span>
+            </div>
+          {% endif %}
+        </a>
+      {% endfor %}
+    </div>
+    {% if section.blocks.size > 1 %}
+      <div class="cabak-banner__controls cabak-products__controls">
+        <button type="button" data-previous aria-label="Campaña anterior" aria-controls="campaign-{{ section.id }}" disabled>{{ 'icon-caret.svg' | inline_asset_content }}</button>
+        <button type="button" data-next aria-label="Campaña siguiente" aria-controls="campaign-{{ section.id }}">{{ 'icon-caret.svg' | inline_asset_content }}</button>
+      </div>
+    {% endif %}
+  </cabak-rail>
+  {% if request.design_mode %}<p class="cabak-editor-note">Carga banners propios: 3:1 en escritorio y 8:5 en móvil. Cada campaña admite una imagen móvil independiente.</p>{% endif %}
+</section>
+{% schema %}
+{
+  "name": "CABAK · Campañas",
+  "enabled_on": { "templates": ["index"] },
+  "max_blocks": 5,
+  "settings": [],
+  "blocks": [{
+    "type": "slide",
+    "name": "Campaña",
+    "settings": [
+      { "type": "text", "id": "heading", "label": "Título accesible", "default": "Tu forma de moverte" },
+      { "type": "image_picker", "id": "image", "label": "Banner propio de CABAK" },
+      { "type": "image_picker", "id": "mobile_image", "label": "Banner móvil" },
+      { "type": "checkbox", "id": "show_text", "label": "Mostrar texto sobre la foto", "default": false },
+      { "type": "url", "id": "link", "label": "Destino" }
+    ]
+  }],
+  "presets": [{ "name": "CABAK · Campañas", "blocks": [{ "type": "slide" }] }]
+}
+{% endschema %}

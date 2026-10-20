@@ -1,0 +1,16 @@
+<section class="cabak-story" aria-labelledby="cabak-story-{{ section.id }}">
+  <div class="cabak-story__inner">
+    <h2 id="cabak-story-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+    <p>{{ section.settings.description | escape }}</p>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "CABAK · Nuestra marca",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Título", "default": "Diseñados para moverte." },
+    { "type": "textarea", "id": "description", "label": "Texto", "default": "Fuerza, confianza y bienestar. CABAK Activewear acompaña tu manera de vivir el movimiento." }
+  ],
+  "presets": [{ "name": "CABAK · Nuestra marca" }]
+}
+{% endschema %}
