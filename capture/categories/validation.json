@@ -1,0 +1,185 @@
+{
+  "report": [
+    {
+      "handle": "enterizos",
+      "width": 320,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "enterizos",
+      "width": 390,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "enterizos",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "enterizos",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "sets-deportivos",
+      "width": 390,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "sets-deportivos",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "faldas",
+      "width": 390,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "faldas",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "shorts",
+      "width": 390,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "shorts",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "licras-largas",
+      "width": 390,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "licras-largas",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "tops",
+      "width": 390,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "tops",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "bolsos",
+      "width": 390,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "bolsos",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "medias",
+      "width": 390,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "medias",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "all",
+      "width": 390,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    },
+    {
+      "handle": "all",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "headingFont": "\"Work Sans\", sans-serif",
+      "background": "rgb(242, 236, 228)",
+      "referenceImages": false
+    }
+  ],
+  "errors": []
+}

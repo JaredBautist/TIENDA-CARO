@@ -1,0 +1,66 @@
+[
+  {
+    "id": "gid://shopify/Collection/513552089331",
+    "title": "Enterizos",
+    "handle": "enterizos",
+    "created": true,
+    "publication": "Online Store",
+    "path": "/collections/enterizos"
+  },
+  {
+    "id": "gid://shopify/Collection/513552122099",
+    "title": "Sets deportivos",
+    "handle": "sets-deportivos",
+    "created": true,
+    "publication": "Online Store",
+    "path": "/collections/sets-deportivos"
+  },
+  {
+    "id": "gid://shopify/Collection/513552154867",
+    "title": "Faldas",
+    "handle": "faldas",
+    "created": true,
+    "publication": "Online Store",
+    "path": "/collections/faldas"
+  },
+  {
+    "id": "gid://shopify/Collection/513552187635",
+    "title": "Shorts",
+    "handle": "shorts",
+    "created": true,
+    "publication": "Online Store",
+    "path": "/collections/shorts"
+  },
+  {
+    "id": "gid://shopify/Collection/513552220403",
+    "title": "Licras largas",
+    "handle": "licras-largas",
+    "created": true,
+    "publication": "Online Store",
+    "path": "/collections/licras-largas"
+  },
+  {
+    "id": "gid://shopify/Collection/513552253171",
+    "title": "Tops",
+    "handle": "tops",
+    "created": true,
+    "publication": "Online Store",
+    "path": "/collections/tops"
+  },
+  {
+    "id": "gid://shopify/Collection/513552285939",
+    "title": "Bolsos",
+    "handle": "bolsos",
+    "created": true,
+    "publication": "Online Store",
+    "path": "/collections/bolsos"
+  },
+  {
+    "id": "gid://shopify/Collection/513552318707",
+    "title": "Medias",
+    "handle": "medias",
+    "created": true,
+    "publication": "Online Store",
+    "path": "/collections/medias"
+  }
+]

@@ -1,0 +1,21 @@
+{{ 'cabak-collection.css' | asset_url | stylesheet_tag }}
+{% liquid
+  assign collection_title = collection.title
+  if collection.handle == 'all'
+    assign collection_title = 'Todos los productos'
+  endif
+%}
+<section class="cabak-collection-header" aria-labelledby="cabak-collection-title">
+  <h1 id="cabak-collection-title">{{ collection_title | escape }}</h1>
+  {% if collection.description != blank %}
+    <div class="cabak-collection-description rte">{{ collection.description }}</div>
+  {% endif %}
+</section>
+{% schema %}
+{
+  "name": "CABAK · Colección",
+  "enabled_on": { "templates": ["collection"] },
+  "settings": [],
+  "presets": [{ "name": "CABAK · Colección" }]
+}
+{% endschema %}

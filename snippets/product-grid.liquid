@@ -107,6 +107,17 @@
       {% render 'text-block-styles' %}
       {% render 'price-styles' %}
       {% render 'product-card-gallery-zoom-details-styles' %}
+      {% if request.page_type == 'collection' and collection.all_products_count == 0 %}
+        <div class="cabak-collection-empty">
+          <h2>Aún no hay productos disponibles</h2>
+          <p>{% if collection.handle == 'all' %}Estamos preparando nuestro catálogo. Vuelve pronto para descubrirlo.{% else %}Estamos preparando esta colección. Mientras tanto, puedes explorar el catálogo completo.{% endif %}</p>
+          {% if collection.handle == 'all' %}
+            <a href="{{ routes.root_url }}">Volver al inicio</a>
+          {% else %}
+            <a href="{{ routes.all_products_collection_url }}">Ver todo</a>
+          {% endif %}
+        </div>
+      {% else %}
       <div class="main-collection-grid__empty">
         <h2 class="main-collection-grid__empty-title h2">
           {{ 'content.no_products_found' | t }}
@@ -115,6 +126,7 @@
           {{ 'content.use_fewer_filters_html' | t: link: collection.url, class: 'main-collection-grid__empty-link' }}
         </p>
       </div>
+      {% endif %}
     {% else %}
       {% if enable_infinite_scroll %}
         <span ref="viewMorePrevious"></span>

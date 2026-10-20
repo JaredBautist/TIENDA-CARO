@@ -8,15 +8,9 @@
   <details class="cabak-menu__collections">
     <summary>Colecciones {{ 'icon-caret.svg' | inline_asset_content }}</summary>
     <div class="cabak-menu__submenu">
-      <a href="{{ routes.root_url }}#cabak-categorias">Todas las categorías</a>
-      {% for collection in collections limit: 12 %}
-        {% if collection.handle != 'all' and collection.products_count > 0 %}
-          <a href="{{ collection.url }}">{{ collection.title | escape }}</a>
-        {% endif %}
-      {% endfor %}
+      {% render 'cabak-category-links', current_handle: collection.handle %}
     </div>
   </details>
-  <a href="{{ routes.all_products_collection_url }}">Ropa deportiva</a>
   {% for link in menu.links %}
     {% unless link.type == 'frontpage_link' or link.url == routes.all_products_collection_url %}
       <a href="{{ link.url }}">{% if link.title == 'Contact' %}Contacto{% else %}{{ link.title | escape }}{% endif %}</a>

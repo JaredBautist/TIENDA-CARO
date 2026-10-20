@@ -1,0 +1,10 @@
+{% doc %}
+  Renders the ordered CABAK category links and the complete catalog link.
+  @param {string} [current_handle] - Active collection handle, if any.
+{% enddoc %}
+{% assign category_names = 'Enterizos|Sets deportivos|Faldas|Shorts|Licras largas|Tops|Bolsos|Medias' | split: '|' %}
+{% for category_name in category_names %}
+  {% assign category_handle = category_name | handleize %}
+  <a href="{{ routes.collections_url }}/{{ category_handle }}"{% if current_handle == category_handle %} aria-current="page"{% endif %}>{{ category_name | escape }}</a>
+{% endfor %}
+<a href="{{ routes.all_products_collection_url }}"{% if current_handle == 'all' %} aria-current="page"{% endif %}>Ver todo</a>

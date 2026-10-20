@@ -43,7 +43,7 @@ class CabakRail extends HTMLElement {
 
 if (!customElements.get('cabak-rail')) customElements.define('cabak-rail', CabakRail);
 
-/** Closes native navigation disclosures on Escape, outside clicks and navigation. */
+/** Adds desktop mouse hover while preserving native touch/keyboard disclosures. */
 class CabakNavigation extends HTMLElement {
   connectedCallback() {
     this.controller?.abort();
@@ -64,6 +64,26 @@ class CabakNavigation extends HTMLElement {
     document.addEventListener('click', event => {
       if (!this.contains(event.target)) this.close();
     }, { signal });
+    if (this.classList.contains('cabak-menu-desktop')) {
+      const hoverPointer = matchMedia('(hover: hover) and (pointer: fine)');
+      this.querySelectorAll('.cabak-menu__collections').forEach(details => {
+        details.addEventListener('pointerenter', event => {
+          if (event.pointerType === 'mouse' && hoverPointer.matches) details.open = true;
+        }, { signal });
+        details.addEventListener('pointerleave', event => {
+          if (event.pointerType === 'mouse' && !details.contains(document.activeElement)) {
+            details.open = false;
+          }
+        }, { signal });
+        details.addEventListener('focusout', () => {
+          queueMicrotask(() => {
+            if (!details.contains(document.activeElement) && !details.matches(':hover')) {
+              details.open = false;
+            }
+          });
+        }, { signal });
+      });
+    }
   }
   close() { this.querySelectorAll('details[open]').forEach(details => { details.open = false; }); }
   disconnectedCallback() { this.controller?.abort(); }
