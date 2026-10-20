@@ -33,3 +33,9 @@ The connected MCP confirms the Basic plan and does not expose checkout-branding 
 3. Run Theme Check, upload to the development theme and create the page through MCP after checking for an existing handle.
 4. Validate the actual route, header, responsive layout, native email form and fallback; capture desktop/mobile evidence.
 5. Record page ID and deployment status. Email delivery and an authenticated session still require an authorized real-email test.
+
+## Removal requested by merchant
+
+The merchant requested removal of the intermediate account page. WHEN the header account control is opened, it SHALL use the original native Shopify account component directly, without a `mi-cuenta` landing page. Preserve hosted branding, Spanish locale and email-code authentication.
+
+Implementation: restore the original header snippet, remove the dedicated section/stylesheet/template and obsolete screenshots, delete only the Shopify content page with handle `mi-cuenta`, and retain native-entry validation. Historical implementation records remain for traceability. Verify absence of custom routing and run the existing responsive native-entry checks.

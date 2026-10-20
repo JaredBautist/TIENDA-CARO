@@ -79,3 +79,9 @@ Anonymous remote preview verification redirected to `/password` (the store is pr
 3. Logo, background and mobile/desktop layout verified on hosted login; finish typography and accessible store naming.
 4. Completed for localization: signed-out checks pass at all four widths. Recheck hosted branding when saved.
 5. Complete an authorized email-code test before claiming authentication has been validated.
+
+## Intermediate page removed at merchant request
+
+The merchant requested removing the intermediate page. Restored the original native header account component, deleted the dedicated section/CSS/template and obsolete page screenshots, and deleted Shopify page `gid://shopify/Page/162781823219` successfully with no user errors. Historical results above describe the removed implementation.
+
+The local preview initially returned HTTP 401. Restarting the existing Shopify development server restored HTTP 200. The native account-entry checks passed at 320, 390, 768 and 1440 px, including an assertion that no intermediate account link remains. Syntax and whitespace checks passed. No authentication settings or hosted branding were changed.

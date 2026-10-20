@@ -18,21 +18,7 @@ async function validateAccountEntry() {
           waitUntil: 'domcontentloaded',
         });
         assert.equal(response.status(), 200, 'Storefront must be available');
-        const accountLink = page.locator('[data-cabak-account-link]');
-        if (await accountLink.count()) {
-          const hitArea = await accountLink.boundingBox();
-          const icon = await accountLink.locator('svg').boundingBox();
-          assert.ok(hitArea.width >= 44 && hitArea.height >= 44, 'Account link needs a 44px touch target');
-          assert.ok(Math.abs(icon.y + icon.height / 2 - hitArea.y - hitArea.height / 2) < 2, 'Account icon stays vertically centered');
-          await accountLink.click();
-          await page.waitForURL('**/pages/mi-cuenta');
-          await page.locator('.cabak-account h1').waitFor();
-          assert.equal(await page.locator('#header-component').isVisible(), true, 'CABAK navigation stays visible');
-          assert.equal(await page.locator('.cabak-header-wordmark').isVisible(), true, 'CABAK wordmark stays visible');
-          assert.equal(await page.locator('.cabak-header-symbol').isVisible(), true, 'CABAK symbol stays visible');
-          assert.match(await page.locator('.cabak-account__registration').innerText(), /verificar tu correo/);
-          await page.screenshot({ path: `${screenshotDirectory}/page-${width}.png` });
-        }
+        assert.equal(await page.locator('[data-cabak-account-link]').count(), 0, 'Header must open native account access directly');
         const account = page.locator('shopify-account');
         const trigger = account.getByRole('button').first();
         await trigger.focus();
