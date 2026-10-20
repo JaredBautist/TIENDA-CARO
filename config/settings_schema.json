@@ -100,7 +100,7 @@
           { "value": "cinzel", "label": "Cinzel Regular" },
           { "value": "theme", "label": "Fuente del tema" }
         ],
-        "default": "cormorant"
+        "default": "theme"
       },
       {
         "type": "font_picker",
