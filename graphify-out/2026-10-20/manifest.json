@@ -1236,9 +1236,9 @@
     "semantic_hash": ""
   },
   "capture/rebuild/validation.json": {
-    "mtime": 1792521913.3138993,
-    "seen": 1792522013.22046,
-    "ast_hash": "665791a54f2599369519177884480fad",
+    "mtime": 1792522374.412397,
+    "seen": 1792522406.5170498,
+    "ast_hash": "324030653588b0967945d3bc3c0cbdd2",
     "semantic_hash": ""
   },
   "capture/reference-capture.cjs": {
@@ -1266,9 +1266,9 @@
     "semantic_hash": ""
   },
   "capture/validate-cabak.cjs": {
-    "mtime": 1792521896.160681,
-    "seen": 1792522013.2204642,
-    "ast_hash": "ec20de41e47a1f558729cf9b53a7d692",
+    "mtime": 1792522316.2747853,
+    "seen": 1792522406.517056,
+    "ast_hash": "43fa98e069ec7ce9f854bb5852fe213c",
     "semantic_hash": ""
   },
   "PARITY.md": {
@@ -1284,27 +1284,27 @@
     "semantic_hash": ""
   },
   "capture/rebuild/campaign-1440.png": {
-    "mtime": 1792521913.0673606,
-    "seen": 1792522013.2205842,
+    "mtime": 1792522374.1483898,
+    "seen": 1792522406.517183,
     "ast_hash": "140a16ca9849085c377daf89ede9ef8a",
     "semantic_hash": ""
   },
   "capture/rebuild/campaign-390.png": {
-    "mtime": 1792521906.3910935,
-    "seen": 1792522013.220585,
-    "ast_hash": "e6259f197bcc1184e1453df419ca5101",
+    "mtime": 1792522361.8440452,
+    "seen": 1792522406.517184,
+    "ast_hash": "0ec3c4a58193f6a8c861189bf2eb5d55",
     "semantic_hash": ""
   },
   "capture/rebuild/categories-1440.png": {
-    "mtime": 1792521913.2413676,
-    "seen": 1792522013.220586,
+    "mtime": 1792522374.339395,
+    "seen": 1792522406.517185,
     "ast_hash": "ccc6643781e820a8e0fa7f932c8f7d38",
     "semantic_hash": ""
   },
   "capture/rebuild/categories-390.png": {
-    "mtime": 1792521906.5300992,
-    "seen": 1792522013.220587,
-    "ast_hash": "ff2d79b6cdf9d092034aea2cced21e59",
+    "mtime": 1792522362.0300586,
+    "seen": 1792522406.5171862,
+    "ast_hash": "0bee2388ab823ef7ac9973efecb40b15",
     "semantic_hash": ""
   },
   "capture/rebuild/desktop-top.png": {
@@ -1314,57 +1314,57 @@
     "semantic_hash": ""
   },
   "capture/rebuild/footer-1440.png": {
-    "mtime": 1792521913.3138993,
-    "seen": 1792522013.2205884,
+    "mtime": 1792522374.411397,
+    "seen": 1792522406.517188,
     "ast_hash": "305dce807edc2e218a324a39d8b1e197",
     "semantic_hash": ""
   },
   "capture/rebuild/footer-390.png": {
-    "mtime": 1792521906.6071022,
-    "seen": 1792522013.2205894,
-    "ast_hash": "9866b6911292976b3dca13009a9de31b",
+    "mtime": 1792522362.1070607,
+    "seen": 1792522406.517189,
+    "ast_hash": "cb459c791849d8c021a3f7c246120625",
     "semantic_hash": ""
   },
   "capture/rebuild/home-1024.png": {
-    "mtime": 1792521910.9904547,
-    "seen": 1792522013.22059,
+    "mtime": 1792522372.253338,
+    "seen": 1792522406.51719,
     "ast_hash": "ea1c4152d34977de4976ede96a35d827",
     "semantic_hash": ""
   },
   "capture/rebuild/home-1440.png": {
-    "mtime": 1792521912.628343,
-    "seen": 1792522013.2205908,
+    "mtime": 1792522373.710378,
+    "seen": 1792522406.5171907,
     "ast_hash": "929792ddea9899777bd6fcc9467435c9",
     "semantic_hash": ""
   },
   "capture/rebuild/home-360.png": {
-    "mtime": 1792521905.0516405,
-    "seen": 1792522013.2205918,
-    "ast_hash": "9df3c6f8576e99b0e883f0c8dd89bcca",
+    "mtime": 1792522358.8269708,
+    "seen": 1792522406.5171926,
+    "ast_hash": "638ada84ab8add7fdfa1ff9bcd14030f",
     "semantic_hash": ""
   },
   "capture/rebuild/home-390.png": {
-    "mtime": 1792521906.3160906,
-    "seen": 1792522013.2205925,
-    "ast_hash": "9eab486e3a8c6e0977a6fd7ef3fc217f",
+    "mtime": 1792522361.7640514,
+    "seen": 1792522406.5171945,
+    "ast_hash": "444f8e2e483a6fcb2161db3ac7ce6688",
     "semantic_hash": ""
   },
   "capture/rebuild/home-768.png": {
-    "mtime": 1792521909.4622166,
-    "seen": 1792522013.2205935,
+    "mtime": 1792522370.815299,
+    "seen": 1792522406.5171974,
     "ast_hash": "371005aeb9aa4ce729ad8896d9ed6b2d",
     "semantic_hash": ""
   },
   "capture/rebuild/products-1440.png": {
-    "mtime": 1792521913.1593642,
-    "seen": 1792522013.2205942,
+    "mtime": 1792522374.2433925,
+    "seen": 1792522406.5171986,
     "ast_hash": "845f5060dbe00bb84a557542aa7090bf",
     "semantic_hash": ""
   },
   "capture/rebuild/products-390.png": {
-    "mtime": 1792521906.4590964,
-    "seen": 1792522013.220595,
-    "ast_hash": "fec5823f93d624a9edd7d4e20b933093",
+    "mtime": 1792522361.9390562,
+    "seen": 1792522406.5171995,
+    "ast_hash": "9ef5387c8bb472c25dfff33cea136852",
     "semantic_hash": ""
   },
   "capture/reference/featured-collections.png": {
@@ -1395,6 +1395,36 @@
     "mtime": 1792521403.7381713,
     "seen": 1792522013.2205987,
     "ast_hash": "f7eca6102714df1e53b7eaaa9dabe02d",
+    "semantic_hash": ""
+  },
+  "docs/cabak-storefront/mobile-polish.md": {
+    "mtime": 1792522316.273785,
+    "seen": 1792522406.517139,
+    "ast_hash": "9c19164992b72ab47b073ac1ebee448f",
+    "semantic_hash": ""
+  },
+  "capture/rebuild/home-320.png": {
+    "mtime": 1792522357.6633067,
+    "seen": 1792522406.5171916,
+    "ast_hash": "ae2272a0e9b575ae0cc4022eecc98dc9",
+    "semantic_hash": ""
+  },
+  "capture/rebuild/home-375.png": {
+    "mtime": 1792522360.2650104,
+    "seen": 1792522406.5171936,
+    "ast_hash": "80c55ed73c5eee2f2087d65c485d393d",
+    "semantic_hash": ""
+  },
+  "capture/rebuild/home-430.png": {
+    "mtime": 1792522364.9741395,
+    "seen": 1792522406.5171952,
+    "ast_hash": "e0146bb49115467cf5097a50941220be",
+    "semantic_hash": ""
+  },
+  "capture/rebuild/home-667.png": {
+    "mtime": 1792522368.0095615,
+    "seen": 1792522406.5171962,
+    "ast_hash": "f541c3f004f59003f75aaacd8cfd193f",
     "semantic_hash": ""
   }
 }
