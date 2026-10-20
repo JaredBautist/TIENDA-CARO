@@ -49,49 +49,65 @@
         "category_0": {
           "type": "category",
           "settings": {
-            "title": "Tops"
+            "title": "Enterizos",
+            "collection": "enterizos",
+            "link": "shopify://collections/enterizos"
           }
         },
         "category_1": {
           "type": "category",
           "settings": {
-            "title": "Bodys y enterizos"
+            "title": "Sets deportivos",
+            "collection": "sets-deportivos",
+            "link": "shopify://collections/sets-deportivos"
           }
         },
         "category_2": {
           "type": "category",
           "settings": {
-            "title": "Shorts"
+            "title": "Faldas",
+            "collection": "faldas",
+            "link": "shopify://collections/faldas"
           }
         },
         "category_3": {
           "type": "category",
           "settings": {
-            "title": "Leggings"
+            "title": "Shorts",
+            "collection": "shorts",
+            "link": "shopify://collections/shorts"
           }
         },
         "category_4": {
           "type": "category",
           "settings": {
-            "title": "Camisetas"
+            "title": "Licras largas",
+            "collection": "licras-largas",
+            "link": "shopify://collections/licras-largas"
           }
         },
         "category_5": {
           "type": "category",
           "settings": {
-            "title": "Faldas"
+            "title": "Tops",
+            "collection": "tops",
+            "link": "shopify://collections/tops"
           }
         },
         "category_6": {
           "type": "category",
           "settings": {
-            "title": "Accesorios"
+            "title": "Bolsos",
+            "collection": "bolsos",
+            "link": "shopify://collections/bolsos"
           }
         },
         "category_7": {
           "type": "category",
           "settings": {
-            "title": "Sudaderas y joggers"
+            "title": "Medias",
+            "collection": "medias",
+            "link": "shopify://collections/medias"
           }
         }
       },

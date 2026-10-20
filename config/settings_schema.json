@@ -92,6 +92,17 @@
         "content": "t:content.fonts"
       },
       {
+        "type": "select",
+        "id": "cabak_heading_font",
+        "label": "Tipografía de títulos CABAK",
+        "options": [
+          { "value": "cormorant", "label": "Cormorant Garamond Medium" },
+          { "value": "cinzel", "label": "Cinzel Regular" },
+          { "value": "theme", "label": "Fuente del tema" }
+        ],
+        "default": "cormorant"
+      },
+      {
         "type": "font_picker",
         "id": "type_body_font",
         "default": "work_sans_n4",

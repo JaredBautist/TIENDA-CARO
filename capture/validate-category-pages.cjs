@@ -39,7 +39,7 @@ async function validateCategories() {
         }));
         assert.equal(geometry.overflow, false);
         assert.equal(geometry.referenceImages, false);
-        assert.match(geometry.headingFont, /Work Sans/);
+        assert.match(geometry.headingFont, /Montserrat/);
         if (category === 'Enterizos') {
           await page.screenshot({ path: path.join(output, `enterizos-${width}.png`), fullPage: true });
           await page.getByRole('button', { name: 'Cart', exact: true }).click();
