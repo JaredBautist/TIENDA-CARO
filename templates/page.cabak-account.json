@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "main": {
+      "type": "cabak-account",
+      "settings": {}
+    }
+  },
+  "order": ["main"]
+}

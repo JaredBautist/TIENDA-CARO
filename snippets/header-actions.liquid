@@ -64,6 +64,19 @@
   {{- block.shopify_attributes -}}
 >
   {% if shop.customer_accounts_enabled %}
+    {% assign cabak_account_page = pages['mi-cuenta'] %}
+    {% if customer == null and cabak_account_page.template_suffix == 'cabak-account' %}
+      <a
+        class="header-actions__action header-actions__text-style"
+        href="{{ cabak_account_page.url }}"
+        aria-label="Mi cuenta: iniciar sesión o registrarme"
+        {% if page.id == cabak_account_page.id %}aria-current="page"{% endif %}
+        data-cabak-account-link
+      >
+        <span class="{% if display_style == 'icon' %}hidden{% else %}mobile:hidden{% endif %}">Mi cuenta</span>
+        <span class="svg-wrapper {% if display_style != 'icon' %}desktop:hidden{% endif %}" aria-hidden="true">{{ account_icon }}</span>
+      </a>
+    {% else %}
     {% liquid
       assign account_actions_style = ''
       if display_style == 'text' and section
@@ -111,6 +124,7 @@
         {% endif %}
       </shopify-account>
     </div>
+    {% endif %}
   {% endif %}
 
   {% if settings.cart_type == 'drawer' and template.name != 'cart' %}
