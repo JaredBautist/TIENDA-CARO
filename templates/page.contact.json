@@ -15,7 +15,7 @@
           "type": "text",
           "name": "t:names.title",
           "settings": {
-            "text": "<h1>{{ closest.page.title }}</h1>",
+            "text": "<h1>Contacto</h1>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -93,7 +93,7 @@
               "type": "contact-form-submit-button",
               "static": true,
               "settings": {
-                "label": "Submit",
+                "label": "Enviar",
                 "style_class": "button",
                 "width": "fit-content",
                 "custom_width": 100,
@@ -136,10 +136,15 @@
         "padding-block-start": 32,
         "padding-block-end": 84
       }
+    },
+    "cabak_contacts": {
+      "type": "cabak-contact-channels",
+      "settings": {}
     }
   },
   "order": [
     "main",
+    "cabak_contacts",
     "form"
   ]
 }

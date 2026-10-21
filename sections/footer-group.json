@@ -4,13 +4,6 @@
   "sections": {
     "cabak_footer": {
       "type": "cabak-footer",
-      "blocks": {
-        "cabak-social": {
-          "type": "social-links",
-          "static": true,
-          "settings": {}
-        }
-      },
       "settings": {}
     }
   },

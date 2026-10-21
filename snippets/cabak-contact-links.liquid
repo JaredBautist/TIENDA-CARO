@@ -1,0 +1,19 @@
+{% comment %}Shared CABAK contact destinations. Pass compact: true for the footer.{% endcomment %}
+<div class="cabak-contact-links{% if compact %} cabak-contact-links--compact{% endif %}">
+  <a class="cabak-contact-link" href="https://www.instagram.com/cabak.co/?hl=es" target="_blank" rel="noopener noreferrer" aria-label="Instagram de CABAK (abre en otra pestaña)">
+    {{ 'cabak-contact-brand-instagram.svg' | inline_asset_content }}
+    <span class="cabak-contact-link__label">Instagram</span>
+  </a>
+  <a class="cabak-contact-link" href="https://www.facebook.com/profile.php?id=61575323155021" target="_blank" rel="noopener noreferrer" aria-label="Facebook de CABAK (abre en otra pestaña)">
+    {{ 'cabak-contact-brand-facebook.svg' | inline_asset_content }}
+    <span class="cabak-contact-link__label">Facebook</span>
+  </a>
+  <a class="cabak-contact-link" href="https://wa.me/573148224047" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de CABAK: +57 314 822 4047 (abre en otra pestaña)">
+    {{ 'cabak-contact-brand-whatsapp.svg' | inline_asset_content }}
+    <span class="cabak-contact-link__label">WhatsApp <span class="cabak-contact-link__detail">+57 314 822 4047</span></span>
+  </a>
+  <a class="cabak-contact-link cabak-contact-link--email" href="mailto:karolinacaballero11a@gmail.com">
+    {{ 'cabak-contact-mail.svg' | inline_asset_content }}
+    <span>karolinacaballero11a@gmail.com</span>
+  </a>
+</div>

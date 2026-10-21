@@ -1,5 +1,5 @@
 <footer class="cabak-footer">
-  <div class="cabak-footer__social">{% content_for 'block', type: 'social-links', id: 'cabak-social' %}</div>
+  {% render 'cabak-contact-links', compact: true %}
   <nav aria-label="Información de la tienda" class="cabak-footer__links">
     <a href="{{ routes.search_url }}">Buscar</a>
     {% for link in section.settings.menu.links %}<a href="{{ link.url }}">{{ link.title | escape }}</a>{% endfor %}

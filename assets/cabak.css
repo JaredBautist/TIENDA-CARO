@@ -160,3 +160,26 @@ cabak-rail { display: block; position: relative; min-width: 0; }
 @media (prefers-reduced-motion: reduce) {
   .cabak-tile__image, .cabak-products__controls button { transition: none; }
 }
+
+/* Shared contact channels: preserve the storefront brand and native links. */
+.cabak-contact-channels { max-width: 760px; margin-inline: auto; padding: 32px 24px 8px; }
+.cabak-contact-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 32px; }
+.cabak-contact-link { display: flex; align-items: center; gap: 12px; min-width: 0; min-height: 44px; padding: 8px 4px; color: var(--cabak-brown); font-size: 14px; line-height: 1.6; text-decoration: none; }
+.cabak-contact-link svg { width: 24px; height: 24px; flex: 0 0 24px; }
+.cabak-contact-link span { min-width: 0; overflow-wrap: anywhere; }
+.cabak-contact-link__detail { display: block; color: var(--cabak-ink); font-size: 13px; }
+.cabak-contact-link:focus-visible { outline: 2px solid var(--cabak-brown); outline-offset: 4px; }
+.cabak-contact-links--compact { grid-template-columns: repeat(3, 44px); justify-content: center; gap: 12px; margin-bottom: 28px; }
+.cabak-contact-links--compact .cabak-contact-link { justify-content: center; }
+.cabak-contact-links--compact .cabak-contact-link__label { display: none; }
+.cabak-contact-links--compact .cabak-contact-link--email { grid-column: 1 / -1; justify-self: center; width: max-content; max-width: calc(100vw - 48px); font-size: 13px; }
+@media (hover: hover) and (pointer: fine) {
+  .cabak-contact-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cabak-contact-link:active svg { transform: scale(.97); }
+}
+@media (max-width: 767px) {
+  .cabak-contact-channels { padding-inline: 20px; }
+  .cabak-contact-links:not(.cabak-contact-links--compact) { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+}
