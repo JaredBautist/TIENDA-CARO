@@ -6,7 +6,7 @@ Add the supplied Instagram, Facebook, WhatsApp and complete email address to the
 ## Acceptance criteria
 - WHEN viewing the footer, visitors SHALL find three labeled social icon links and the complete linked email address.
 - WHEN viewing Contacto, visitors SHALL find all four channels above the existing form.
-- WHEN activating a channel, its link SHALL use the supplied profile, wa.me/573148224047, or mailto:karolinacaballero11a@gmail.com.
+- WHEN activating a channel, its link SHALL use the supplied profile, wa.me/573148224047, or mailto:cabak.activewear@gmail.com.
 - Icons SHALL use #735238; links SHALL have visible keyboard focus and minimum 44px touch targets.
 - At 320px through desktop widths, contact content SHALL remain readable without horizontal overflow.
 
