@@ -145,7 +145,8 @@ cabak-rail { display: block; position: relative; min-width: 0; }
   .cabak-footer { padding: 48px 16px max(40px, env(safe-area-inset-bottom)); }
   .cabak-footer__links { flex-direction: column; gap: 8px; }
   .cabak-footer__links a { min-height: 44px; display: grid; place-content: center; font-size: 14px; }
-  #header-component .header__columns:has(.cabak-header-wordmark) {
+  #header-component .header__columns:has(.cabak-header-wordmark),
+  #header-component[data-menu-style='drawer'] .header__columns:has(.cabak-header-wordmark) {
     grid-template-areas: 'center center center center center' 'leftA leftB . rightA rightB';
     row-gap: 0;
   }
@@ -182,4 +183,10 @@ cabak-rail { display: block; position: relative; min-width: 0; }
 @media (max-width: 767px) {
   .cabak-contact-channels { padding-inline: 20px; }
   .cabak-contact-links:not(.cabak-contact-links--compact) { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+}
+
+@media (max-width: 749px) {
+  #header-component shopify-account::part(signed-out-avatar),
+  #header-component shopify-account::part(signed-in-avatar) { min-width: 44px; min-height: 44px; }
+  #header-component div.account-button { min-width: 44px; min-height: 44px; }
 }
