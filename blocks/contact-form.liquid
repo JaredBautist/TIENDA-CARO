@@ -58,8 +58,9 @@
     {%- endif -%}
 
     <div class="contact-form__form-row">
+      <div class="cabak-contact-field">
       <label
-        class="visually-hidden"
+        class="cabak-contact-label"
         for="ContactForm-name"
       >
         {{- 'blocks.contact_form.name' | t -}}
@@ -74,8 +75,10 @@
         placeholder="{{ 'blocks.contact_form.name' | t }}"
       >
 
+      </div>
+      <div class="cabak-contact-field">
       <label
-        class="visually-hidden"
+        class="cabak-contact-label"
         for="ContactForm-email"
       >
         {{- 'blocks.contact_form.email' | t -}}
@@ -97,10 +100,11 @@
         {% endif %}
         placeholder="{{ 'blocks.contact_form.email' | t }}"
       >
+      </div>
     </div>
 
     <label
-      class="visually-hidden"
+      class="cabak-contact-label"
       for="ContactForm-phone"
     >
       {{- 'blocks.contact_form.phone' | t -}}
@@ -117,7 +121,7 @@
     >
 
     <label
-      class="visually-hidden"
+      class="cabak-contact-label"
       for="ContactForm-body"
     >
       {{- 'blocks.contact_form.comment' | t -}}

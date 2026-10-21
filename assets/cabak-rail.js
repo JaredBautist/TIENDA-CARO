@@ -5,14 +5,15 @@
 class CabakRail extends HTMLElement {
   connectedCallback() {
     this.controller?.abort();
+    this.observer?.disconnect();
     this.controller = new AbortController();
     const { signal } = this.controller;
     this.track = this.querySelector('[data-track]');
     this.previous = this.querySelector('[data-previous]');
     this.next = this.querySelector('[data-next]');
     if (!this.track || !this.previous || !this.next) return;
-    this.previous.addEventListener('click', () => this.move(-1), { signal });
-    this.next.addEventListener('click', () => this.move(1), { signal });
+    this.previous.addEventListener('click', event => this.move(-1, event.detail === 0), { signal });
+    this.next.addEventListener('click', event => this.move(1, event.detail === 0), { signal });
     this.track.addEventListener('scroll', () => this.updateControls(), { passive: true, signal });
     this.observer = new ResizeObserver(() => this.updateControls());
     this.observer.observe(this.track);
@@ -24,18 +25,19 @@ class CabakRail extends HTMLElement {
     this.observer?.disconnect();
   }
 
-  move(direction) {
+  move(direction, immediate = false) {
     const card = this.track.firstElementChild;
     if (!card) return;
     const gap = Number.parseFloat(getComputedStyle(this.track).columnGap) || 0;
     this.track.scrollBy({
       left: direction * (card.getBoundingClientRect().width + gap),
-      behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+      behavior: immediate || matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
     });
   }
 
   updateControls() {
     const end = this.track.scrollWidth - this.track.clientWidth;
+    this.previous.parentElement.hidden = end <= 2;
     this.previous.disabled = this.track.scrollLeft <= 2;
     this.next.disabled = this.track.scrollLeft >= end - 2;
   }
@@ -50,6 +52,7 @@ class CabakNavigation extends HTMLElement {
     this.controller = new AbortController();
     const { signal } = this.controller;
     this.addEventListener('keydown', event => {
+      this.querySelectorAll('.cabak-menu__submenu').forEach(panel => panel.getAnimations().forEach(animation => animation.cancel()));
       if (event.key !== 'Escape') return;
       const opened = [...this.querySelectorAll('details[open]')].at(-1);
       if (opened) {
@@ -68,7 +71,14 @@ class CabakNavigation extends HTMLElement {
       const hoverPointer = matchMedia('(hover: hover) and (pointer: fine)');
       this.querySelectorAll('.cabak-menu__collections').forEach(details => {
         details.addEventListener('pointerenter', event => {
-          if (event.pointerType === 'mouse' && hoverPointer.matches) details.open = true;
+          if (event.pointerType !== 'mouse' || !hoverPointer.matches || details.open) return;
+          details.open = true;
+          const panel = details.querySelector('.cabak-menu__submenu');
+          if (panel && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            panel.getAnimations().forEach(animation => animation.cancel());
+            panel.animate([{ opacity: 0.65, transform: 'translateY(-6px)' }, { opacity: 1, transform: 'none' }],
+              { duration: 160, easing: 'cubic-bezier(0.23, 1, 0.32, 1)' });
+          }
         }, { signal });
         details.addEventListener('pointerleave', event => {
           if (event.pointerType === 'mouse' && !details.contains(document.activeElement)) {

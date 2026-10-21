@@ -1,0 +1,24 @@
+:root { --cabak-ease-out: cubic-bezier(.23, 1, .32, 1); --cabak-press-duration: 120ms; }
+.cabak-products__controls[hidden] { display: none; }
+.cabak-contact-field { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 8px; }
+.cabak-contact-label { display: block; font-size: 14px; line-height: 1.5; color: var(--cabak-ink); }
+.contact-form__form > .cabak-contact-label { margin-bottom: -8px; }
+@media (max-width: 749px) {
+  .cabak-banner__controls { margin-top: 8px; margin-bottom: 0; }
+  .cabak-products__controls { margin-bottom: 16px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cabak-category-grid__media img { transition: transform 240ms var(--cabak-ease-out); }
+  .cabak-products__controls button, .cabak-contact-link svg, .cabak-category-grid__title, .contact-form__form button {
+    transition: transform var(--cabak-press-duration) var(--cabak-ease-out);
+  }
+  .cabak-products__controls button:not(:disabled):active:not(:focus-visible),
+  .contact-form__form button:active:not(:focus-visible) { transform: scale(.97); }
+  .cabak-contact-link:active:not(:focus-visible) svg { transform: scale(.97); }
+  .cabak-category-grid__tile a:active:not(:focus-visible) .cabak-category-grid__title { transform: scale(.98); }
+  @media (hover: hover) and (pointer: fine) {
+    .cabak-category-grid__tile a:hover .cabak-category-grid__media img { transform: scale(1.025); }
+  }
+}
+.cabak-category-grid__tile a:focus-visible { outline: 2px solid var(--cabak-brown); outline-offset: 4px; }
+.cabak-category-grid__tile a:focus-visible img { transition: none; transform: none; }

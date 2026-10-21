@@ -2,3 +2,6 @@
 {{ 'base.css' | asset_url | stylesheet_tag: preload: true }}
 {{ 'cabak.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'cabak-rail.js' | asset_url }}" type="module" fetchpriority="low"></script>
+
+{{ 'cabak-motion.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'cabak-motion.js' | asset_url }}" type="module" fetchpriority="low"></script>
