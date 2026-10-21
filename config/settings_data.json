@@ -1,10 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "logo_height": 36,
     "logo_height_mobile": 28,
-    "page_background_color": "{{ settings.color_palette.background }}",
-    "page_width": "normal",
+    "favicon": "shopify://shop_images/cabak-symbol-transparent.png",
     "page_text_color": "{{ settings.color_palette.foreground }}",
+    "cabak_heading_font": "theme",
     "type_body_font": "montserrat_n4",
     "type_subheading_font": "montserrat_n5",
     "type_heading_font": "montserrat_n5",
@@ -35,6 +44,8 @@
     "type_font_h6": "heading",
     "type_size_h6": "12",
     "type_line_height_h6": "display-loose",
+    "page_background_color": "{{ settings.color_palette.background }}",
+    "page_width": "normal",
     "page_transition_enabled": false,
     "transition_to_main_product": false,
     "card_hover_effect": "none",
@@ -93,13 +104,21 @@
     "variant_button_border_width": 1,
     "variant_button_radius": 4,
     "variant_button_width": "equal-width-buttons",
+    "sections": {
+      "password-footer": {
+        "type": "password-footer",
+        "settings": {
+          "background_color": ""
+        }
+      }
+    },
+    "content_for_index": [],
     "color_palette": {
       "background": "#F2ECE4",
       "foreground": "#35271F",
       "color1": "#735238",
       "color2": "#C7B5A4"
-    },
-    "cabak_heading_font": "theme"
+    }
   },
   "presets": {
     "Horizon": {
