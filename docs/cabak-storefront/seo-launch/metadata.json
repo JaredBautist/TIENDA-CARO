@@ -1,0 +1,82 @@
+[
+  {
+    "page": "Inicio",
+    "path": "/",
+    "title": "Ropa deportiva para mujer | CABAK Activewear",
+    "description": "Descubre ropa deportiva para mujer en CABAK: enterizos, sets deportivos, licras, tops y más. Encuentra tu próximo look para entrenar y moverte con actitud.",
+    "intro": "",
+    "status": "theme_fallback_admin_pending"
+  },
+  {
+    "page": "Enterizos",
+    "path": "/collections/enterizos",
+    "title": "Enterizos deportivos para mujer | CABAK Activewear",
+    "description": "Explora la colección de enterizos deportivos para mujer de CABAK Activewear. Una categoría de prendas de una pieza para tus looks deportivos.",
+    "intro": "Enterizos deportivos para mujer: prendas de una pieza para tus looks de entrenamiento.",
+    "status": "applied_admin_verified"
+  },
+  {
+    "page": "Sets deportivos",
+    "path": "/collections/sets-deportivos",
+    "title": "Sets y conjuntos deportivos para mujer | CABAK Activewear",
+    "description": "Descubre la colección de sets y conjuntos deportivos para mujer de CABAK Activewear. Prendas coordinadas para crear tus looks de entrenamiento.",
+    "intro": "Sets y conjuntos deportivos para mujer: una forma de combinar tu look de entrenamiento.",
+    "status": "applied_admin_verified"
+  },
+  {
+    "page": "Faldas",
+    "path": "/collections/faldas",
+    "title": "Faldas deportivas para mujer | CABAK Activewear",
+    "description": "Explora la colección de faldas deportivas para mujer de CABAK Activewear. Ideas para combinar con tops y crear tu propio look deportivo.",
+    "intro": "Faldas deportivas para mujer que puedes combinar con tus tops favoritos.",
+    "status": "applied_admin_verified"
+  },
+  {
+    "page": "Shorts",
+    "path": "/collections/shorts",
+    "title": "Shorts deportivos para mujer | CABAK Activewear",
+    "description": "Conoce la colección de shorts deportivos para mujer de CABAK Activewear. Pantalones cortos para combinar con tops y completar tu look deportivo.",
+    "intro": "Shorts y pantalones cortos deportivos para mujer: combínalos con tus tops favoritos.",
+    "status": "applied_admin_verified"
+  },
+  {
+    "page": "Licras largas",
+    "path": "/collections/licras-largas",
+    "title": "Licras largas y leggings para mujer | CABAK Activewear",
+    "description": "Explora la colección de licras largas y leggings deportivos para mujer de CABAK Activewear. Una categoría para combinar con tops y prendas deportivas.",
+    "intro": "Licras largas y leggings deportivos para mujer, para combinar con tops y otras prendas deportivas.",
+    "status": "applied_admin_verified"
+  },
+  {
+    "page": "Tops",
+    "path": "/collections/tops",
+    "title": "Tops deportivos para mujer | CABAK Activewear",
+    "description": "Descubre la colección de tops deportivos para mujer de CABAK Activewear. Prendas para combinar con licras largas, shorts o faldas deportivas.",
+    "intro": "Tops deportivos para mujer: combínalos con licras largas, shorts o faldas deportivas.",
+    "status": "applied_admin_verified"
+  },
+  {
+    "page": "Bolsos",
+    "path": "/collections/bolsos",
+    "title": "Bolsos | CABAK Activewear",
+    "description": "Conoce la colección de bolsos de CABAK Activewear. Escríbenos por nuestros canales de contacto si tienes dudas sobre un modelo o su disponibilidad.",
+    "intro": "Bolsos para complementar tu estilo. Si tienes dudas sobre un modelo, escríbenos.",
+    "status": "applied_admin_verified"
+  },
+  {
+    "page": "Medias",
+    "path": "/collections/medias",
+    "title": "Medias para tus looks deportivos | CABAK Activewear",
+    "description": "Explora la colección de medias en CABAK Activewear para complementar tus looks. Escríbenos si tienes dudas sobre un producto o su disponibilidad.",
+    "intro": "Medias para complementar tus looks. Consulta la disponibilidad de cada producto.",
+    "status": "applied_admin_verified"
+  },
+  {
+    "page": "Contacto",
+    "path": "/pages/contact",
+    "title": "Contacto | CABAK Activewear",
+    "description": "Contacta con CABAK Activewear por WhatsApp, correo, Instagram o Facebook. Escríbenos para consultar sobre nuestros productos y tus pedidos.",
+    "intro": "",
+    "status": "applied_admin_verified"
+  }
+]

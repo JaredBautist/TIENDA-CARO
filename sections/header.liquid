@@ -325,17 +325,7 @@
   {% endif %}
 {% endcapture %}
 
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": {{ shop.name | json }},
-    {% if settings.logo %}
-      "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
-    {% endif %}
-    "url": {{ request.origin | append: page.url | json }}
-  }
-</script>
+{% render 'cabak-organization' %}
 
 <header-component
   id="header-component"
@@ -383,9 +373,6 @@
   <div
     class="header__underlay header__underlay-open"
   ></div>
-  {%- if request.page_type == 'index' -%}
-    <h1 class="visually-hidden">{{ shop.name }}</h1>
-  {%- endif -%}
   {% for row in rows %}
     {% liquid
       assign background = 'background_color_' | append: row

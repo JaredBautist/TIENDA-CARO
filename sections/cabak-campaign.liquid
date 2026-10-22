@@ -2,8 +2,11 @@
   <cabak-rail>
     <div class="cabak-banner__track" data-track id="campaign-{{ section.id }}" tabindex="0" aria-label="Deslizar campañas">
       {% for block in section.blocks %}
-        {% assign campaign_link = block.settings.link | default: routes.all_products_collection_url %}
-        <a class="cabak-banner__slide{% if block.settings.image == blank %} cabak-banner__slide--pending{% endif %}" href="{{ campaign_link }}" {{ block.shopify_attributes }} aria-label="{{ block.settings.heading | escape }}">
+        {% liquid
+          assign campaign_link = block.settings.link | default: routes.all_products_collection_url
+          assign campaign_heading = block.settings.heading | default: 'Ropa deportiva para tu forma de moverte'
+        %}
+        <a class="cabak-banner__slide{% if block.settings.image == blank %} cabak-banner__slide--pending{% endif %}" href="{{ campaign_link }}" {{ block.shopify_attributes }} aria-label="{{ campaign_heading | escape }}">
           {% if block.settings.image != blank %}
             <picture>
               {% if block.settings.mobile_image != blank %}
@@ -19,11 +22,19 @@
           {% if block.settings.image == blank or block.settings.show_text %}
             <div class="cabak-banner__copy">
               <span class="cabak-banner__brand">CABAK ACTIVEWEAR</span>
-              <span class="cabak-banner__heading">{{ block.settings.heading | escape }}</span>
+              {% if forloop.first %}
+                <h1 class="cabak-banner__heading">{{ campaign_heading | escape }}</h1>
+              {% else %}
+                <span class="cabak-banner__heading">{{ campaign_heading | escape }}</span>
+              {% endif %}
               <span class="cabak-banner__cta">Ver colección</span>
             </div>
+          {% elsif forloop.first %}
+            <h1 class="visually-hidden">{{ campaign_heading | escape }}</h1>
           {% endif %}
         </a>
+      {% else %}
+        <h1 class="visually-hidden">Ropa deportiva para mujer</h1>
       {% endfor %}
     </div>
     {% if section.blocks.size > 1 %}
@@ -38,6 +49,7 @@
 {% schema %}
 {
   "name": "CABAK · Campañas",
+  "limit": 1,
   "enabled_on": { "templates": ["index"] },
   "max_blocks": 5,
   "settings": [],

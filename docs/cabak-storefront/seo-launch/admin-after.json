@@ -1,0 +1,166 @@
+{
+  "verifiedAt": "2026-10-22T17:14:43.429Z",
+  "shop": {
+    "id": "gid://shopify/Shop/86246457587",
+    "name": "My Store",
+    "description": "",
+    "url": "https://cabak.co"
+  },
+  "collections": {
+    "nodes": [
+      {
+        "id": "gid://shopify/Collection/513540292851",
+        "title": "Home page",
+        "handle": "frontpage",
+        "descriptionHtml": "",
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "productsCount": {
+          "count": 1
+        },
+        "updatedAt": "2026-10-21T16:53:01Z"
+      },
+      {
+        "id": "gid://shopify/Collection/513552089331",
+        "title": "Enterizos",
+        "handle": "enterizos",
+        "descriptionHtml": "<p>Enterizos deportivos para mujer: prendas de una pieza para tus looks de entrenamiento.</p>",
+        "seo": {
+          "title": "Enterizos deportivos para mujer | CABAK Activewear",
+          "description": "Explora la colección de enterizos deportivos para mujer de CABAK Activewear. Una categoría de prendas de una pieza para tus looks deportivos."
+        },
+        "productsCount": {
+          "count": 0
+        },
+        "updatedAt": "2026-10-20T20:13:04Z"
+      },
+      {
+        "id": "gid://shopify/Collection/513552122099",
+        "title": "Sets deportivos",
+        "handle": "sets-deportivos",
+        "descriptionHtml": "<p>Sets y conjuntos deportivos para mujer: una forma de combinar tu look de entrenamiento.</p>",
+        "seo": {
+          "title": "Sets y conjuntos deportivos para mujer | CABAK Activewear",
+          "description": "Descubre la colección de sets y conjuntos deportivos para mujer de CABAK Activewear. Prendas coordinadas para crear tus looks de entrenamiento."
+        },
+        "productsCount": {
+          "count": 0
+        },
+        "updatedAt": "2026-10-20T20:13:07Z"
+      },
+      {
+        "id": "gid://shopify/Collection/513552154867",
+        "title": "Faldas",
+        "handle": "faldas",
+        "descriptionHtml": "<p>Faldas deportivas para mujer que puedes combinar con tus tops favoritos.</p>",
+        "seo": {
+          "title": "Faldas deportivas para mujer | CABAK Activewear",
+          "description": "Explora la colección de faldas deportivas para mujer de CABAK Activewear. Ideas para combinar con tops y crear tu propio look deportivo."
+        },
+        "productsCount": {
+          "count": 0
+        },
+        "updatedAt": "2026-10-20T20:13:11Z"
+      },
+      {
+        "id": "gid://shopify/Collection/513552187635",
+        "title": "Shorts",
+        "handle": "shorts",
+        "descriptionHtml": "<p>Shorts y pantalones cortos deportivos para mujer: combínalos con tus tops favoritos.</p>",
+        "seo": {
+          "title": "Shorts deportivos para mujer | CABAK Activewear",
+          "description": "Conoce la colección de shorts deportivos para mujer de CABAK Activewear. Pantalones cortos para combinar con tops y completar tu look deportivo."
+        },
+        "productsCount": {
+          "count": 0
+        },
+        "updatedAt": "2026-10-20T20:13:14Z"
+      },
+      {
+        "id": "gid://shopify/Collection/513552220403",
+        "title": "Licras largas",
+        "handle": "licras-largas",
+        "descriptionHtml": "<p>Licras largas y leggings deportivos para mujer, para combinar con tops y otras prendas deportivas.</p>",
+        "seo": {
+          "title": "Licras largas y leggings para mujer | CABAK Activewear",
+          "description": "Explora la colección de licras largas y leggings deportivos para mujer de CABAK Activewear. Una categoría para combinar con tops y prendas deportivas."
+        },
+        "productsCount": {
+          "count": 0
+        },
+        "updatedAt": "2026-10-20T20:13:18Z"
+      },
+      {
+        "id": "gid://shopify/Collection/513552253171",
+        "title": "Tops",
+        "handle": "tops",
+        "descriptionHtml": "<p>Tops deportivos para mujer: combínalos con licras largas, shorts o faldas deportivas.</p>",
+        "seo": {
+          "title": "Tops deportivos para mujer | CABAK Activewear",
+          "description": "Descubre la colección de tops deportivos para mujer de CABAK Activewear. Prendas para combinar con licras largas, shorts o faldas deportivas."
+        },
+        "productsCount": {
+          "count": 0
+        },
+        "updatedAt": "2026-10-20T20:13:21Z"
+      },
+      {
+        "id": "gid://shopify/Collection/513552285939",
+        "title": "Bolsos",
+        "handle": "bolsos",
+        "descriptionHtml": "<p>Bolsos para complementar tu estilo. Si tienes dudas sobre un modelo, escríbenos.</p>",
+        "seo": {
+          "title": "Bolsos | CABAK Activewear",
+          "description": "Conoce la colección de bolsos de CABAK Activewear. Escríbenos por nuestros canales de contacto si tienes dudas sobre un modelo o su disponibilidad."
+        },
+        "productsCount": {
+          "count": 0
+        },
+        "updatedAt": "2026-10-20T20:13:25Z"
+      },
+      {
+        "id": "gid://shopify/Collection/513552318707",
+        "title": "Medias",
+        "handle": "medias",
+        "descriptionHtml": "<p>Medias para complementar tus looks. Consulta la disponibilidad de cada producto.</p>",
+        "seo": {
+          "title": "Medias para tus looks deportivos | CABAK Activewear",
+          "description": "Explora la colección de medias en CABAK Activewear para complementar tus looks. Escríbenos si tienes dudas sobre un producto o su disponibilidad."
+        },
+        "productsCount": {
+          "count": 1
+        },
+        "updatedAt": "2026-10-21T16:54:44Z"
+      }
+    ]
+  },
+  "pages": {
+    "nodes": [
+      {
+        "id": "gid://shopify/Page/162771861747",
+        "title": "Contacto",
+        "handle": "contact",
+        "body": "",
+        "isPublished": true,
+        "templateSuffix": "contact",
+        "updatedAt": "2026-10-22T17:14:24Z",
+        "seoTitle": {
+          "id": "gid://shopify/Metafield/192006007849203",
+          "namespace": "global",
+          "key": "title_tag",
+          "value": "Contacto | CABAK Activewear",
+          "type": "single_line_text_field"
+        },
+        "seoDescription": {
+          "id": "gid://shopify/Metafield/192006007881971",
+          "namespace": "global",
+          "key": "description_tag",
+          "value": "Contacta con CABAK Activewear por WhatsApp, correo, Instagram o Facebook. Escríbenos para consultar sobre nuestros productos y tus pedidos.",
+          "type": "single_line_text_field"
+        }
+      }
+    ]
+  }
+}

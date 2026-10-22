@@ -1,0 +1,6 @@
+{%- comment -%}Preserve the Admin name; replace only Shopify's unconfigured placeholder.{%- endcomment -%}
+{%- if shop.name == blank or shop.name == 'My Store' -%}
+  CABAK Activewear
+{%- else -%}
+  {{- shop.name -}}
+{%- endif -%}

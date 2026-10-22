@@ -1,0 +1,154 @@
+{
+  "capturedAt": "2026-10-22T17:13:10.713Z",
+  "shop": {
+    "id": "gid://shopify/Shop/86246457587",
+    "name": "My Store",
+    "description": "",
+    "url": "https://cabak.co"
+  },
+  "collections": {
+    "nodes": [
+      {
+        "id": "gid://shopify/Collection/513540292851",
+        "title": "Home page",
+        "handle": "frontpage",
+        "descriptionHtml": "",
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "productsCount": {
+          "count": 1
+        },
+        "updatedAt": "2026-10-21T16:53:01Z"
+      },
+      {
+        "id": "gid://shopify/Collection/513552089331",
+        "title": "Enterizos",
+        "handle": "enterizos",
+        "descriptionHtml": "",
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "productsCount": {
+          "count": 0
+        },
+        "updatedAt": "2026-10-20T20:13:04Z"
+      },
+      {
+        "id": "gid://shopify/Collection/513552122099",
+        "title": "Sets deportivos",
+        "handle": "sets-deportivos",
+        "descriptionHtml": "",
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "productsCount": {
+          "count": 0
+        },
+        "updatedAt": "2026-10-20T20:13:07Z"
+      },
+      {
+        "id": "gid://shopify/Collection/513552154867",
+        "title": "Faldas",
+        "handle": "faldas",
+        "descriptionHtml": "",
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "productsCount": {
+          "count": 0
+        },
+        "updatedAt": "2026-10-20T20:13:11Z"
+      },
+      {
+        "id": "gid://shopify/Collection/513552187635",
+        "title": "Shorts",
+        "handle": "shorts",
+        "descriptionHtml": "",
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "productsCount": {
+          "count": 0
+        },
+        "updatedAt": "2026-10-20T20:13:14Z"
+      },
+      {
+        "id": "gid://shopify/Collection/513552220403",
+        "title": "Licras largas",
+        "handle": "licras-largas",
+        "descriptionHtml": "",
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "productsCount": {
+          "count": 0
+        },
+        "updatedAt": "2026-10-20T20:13:18Z"
+      },
+      {
+        "id": "gid://shopify/Collection/513552253171",
+        "title": "Tops",
+        "handle": "tops",
+        "descriptionHtml": "",
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "productsCount": {
+          "count": 0
+        },
+        "updatedAt": "2026-10-20T20:13:21Z"
+      },
+      {
+        "id": "gid://shopify/Collection/513552285939",
+        "title": "Bolsos",
+        "handle": "bolsos",
+        "descriptionHtml": "",
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "productsCount": {
+          "count": 0
+        },
+        "updatedAt": "2026-10-20T20:13:25Z"
+      },
+      {
+        "id": "gid://shopify/Collection/513552318707",
+        "title": "Medias",
+        "handle": "medias",
+        "descriptionHtml": "",
+        "seo": {
+          "title": null,
+          "description": null
+        },
+        "productsCount": {
+          "count": 1
+        },
+        "updatedAt": "2026-10-21T16:54:44Z"
+      }
+    ]
+  },
+  "pages": {
+    "nodes": [
+      {
+        "id": "gid://shopify/Page/162771861747",
+        "title": "Contact",
+        "handle": "contact",
+        "body": "",
+        "isPublished": true,
+        "templateSuffix": "contact",
+        "updatedAt": "2026-10-20T17:23:22Z",
+        "seoTitle": null,
+        "seoDescription": null
+      }
+    ]
+  }
+}

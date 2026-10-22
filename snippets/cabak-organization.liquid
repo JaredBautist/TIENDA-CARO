@@ -1,0 +1,29 @@
+{%- liquid
+  capture brand_name
+    render 'cabak-brand-name'
+  endcapture
+  assign organization_logo = 'cabak-symbol-transparent.png' | asset_url
+  if settings.logo != blank
+    assign organization_logo = settings.logo | image_url: width: 500
+  endif
+  assign logo_prefix = organization_logo | slice: 0, 2
+  if logo_prefix == '//'
+    assign organization_logo = organization_logo | prepend: 'https:'
+  elsif organization_logo contains 'http://'
+    assign organization_logo = organization_logo | replace_first: 'http://', 'https://'
+  endif
+-%}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": {{ shop.url | append: '/#organization' | json }},
+    "name": {{ brand_name | strip | json }},
+    "url": {{ shop.url | json }},
+    "logo": {{ organization_logo | json }},
+    "sameAs": [
+      "https://www.instagram.com/cabak.co/",
+      "https://www.facebook.com/profile.php?id=61575323155021"
+    ]
+  }
+</script>
